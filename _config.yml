@@ -3,8 +3,8 @@ baseurl: "/online.portfolio"
 url: "https://leeeeesamo.github.io"
 
 ## THEME-SPECIFIC CONFIGURATION ##
-title: My Online Portfolio                              # site's title
-description: Showcasing expertise in business solutions and IT services — explore my skills and achievements.                                           # used by search engines
+title: Leesa Moore | Career Portfolio
+description: Leesa Moore's professional career portfolio showcasing expertise in IT Management and Customer Service Leadership.                                           
 avatar: assets/img/online-portfolio.png                 # Empty for no avatar in navbar
 favicon: assets/favicon.ico                             # Icon displayed in the tab
 
@@ -56,8 +56,7 @@ exclude:
   - ".idea" 
   - "vendor/*" 
   - "assets/node_modules/*"
-  - archive.md
-
+  - search.md
   
 # theme: type-on-strap                                  # if using the theme as a jekyll theme gem
 remote_theme: sylhare/Type-on-Strap                     # If using as a remote_theme in github
