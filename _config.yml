@@ -29,6 +29,15 @@ google_analytics: G-62GQJMN2DP                          # Measurement ID, e.g. "
 cookie_consent: false                                   # To respect the usage of cookies
 color_theme: auto                                       # auto, dark or light
 
+# Navigation
+navigation:
+  - name: "Portfolio"
+    link: "/portfolio/"
+  - name: "Resumes"
+    link: "/resumes/"
+  - name: "Contact Me"
+    link: "/contact/"
+
 # PAGINATION
 paginate: 5
 paginate_path: "/portfolio/page:num" 
