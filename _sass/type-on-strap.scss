@@ -2,41 +2,41 @@
 
 /* Variables */
 // All the options to customize your theme in one file
-@import 'base/variables';
+@use 'base/variables' as *;
 
 /* External */
 // CSS from external sources
-@import 'external/reset';
-@import 'external/font-awesome';
-@import 'external/pacifico';
-@import 'external/katex';
-@import 'external/source-sans-pro';
+@use 'external/reset';
+@use 'external/font-awesome';
+@use 'external/pacifico';
+@use 'external/katex';
+@use 'external/source-sans-pro';
 
 /* Base */
 // For general CSS in the theme
-@import 'base/global';
-@import 'base/highlight';
-@import 'base/utility';
+@use 'base/global';
+@use 'base/highlight';
+@use 'base/utility';
 
 /* Includes */
 // Linked with the html in the _includes folder
-@import 'includes/post_nav';
-@import 'includes/footer';
-@import 'includes/navbar';
-@import 'includes/share_buttons';
-@import 'includes/blog_nav';
-@import 'includes/gallery';
-@import 'includes/portfolio';
-@import 'includes/aligner';
+@use 'includes/post_nav';
+@use 'includes/footer';
+@use 'includes/navbar';
+@use 'includes/share_buttons';
+@use 'includes/blog_nav';
+@use 'includes/gallery';
+@use 'includes/portfolio';
+@use 'includes/aligner';
 
 /* Posts */
 // Linked with the html in the _layouts folder
-@import 'layouts/posts';
-@import 'layouts/categories';
-@import 'layouts/blog';
-@import 'layouts/page';
-@import 'layouts/tags';
-@import 'layouts/search';
+@use 'layouts/posts';
+@use 'layouts/categories';
+@use 'layouts/blog';
+@use 'layouts/page';
+@use 'layouts/tags';
+@use 'layouts/search';
 
 /**
 
@@ -45,7 +45,7 @@ CUSTOM STYLING
 In the case you want to add your own style on top of the type-on-strap one.
 You can add a custom scss file using:
 
-@import 'custom';
+@use 'custom';
 
 Put it right after this comment for your changes to be applied over the default style.
 (Once it processed into the assets/css/main.css by Jekyll at run time)
