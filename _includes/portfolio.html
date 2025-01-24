@@ -2,13 +2,17 @@
 <div class="portfolio-grid">
     {% for item in site.portfolio %}
     <div class="portfolio-cell">
-        <a class="portfolio-link" data-keyboard="true" href="{{ item.url | relative_url }}">
-            <div class="caption" title="{{ item.title }}">
+        <a class="portfolio-link" href="{{ item.url | relative_url }}" title="{{ item.title }}">
+            <div class="caption">
                 <div class="caption-content">
                     <i class="fas fa-search-plus fa-3x"></i>
                 </div>
             </div>
-            <img alt="" class="" src="{{ item.img | relative_url }}">
+            {% if item.img %}
+            <img alt="{{ item.title }}" src="{{ item.img | relative_url }}">
+            {% else %}
+            <img alt="Placeholder image" src="/assets/img/portfolio/placeholder.png">
+            {% endif %}
         </a>
     </div>
     {% endfor %}

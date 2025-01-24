@@ -3,8 +3,8 @@ baseurl: "/online.portfolio"
 url: "https://leeeeesamo.github.io"
 
 ## THEME-SPECIFIC CONFIGURATION ##
-title: Leesa Moore | Career Portfolio
-description: Leesa Moore's professional career portfolio showcasing expertise in IT Management and Customer Service Leadership.                                           
+title: My Career Portfolio
+description: A professional portfolio showcasing my career achievements.                                       
 avatar: assets/img/online-portfolio.png                 # Empty for no avatar in navbar
 favicon: assets/favicon.ico                             # Icon displayed in the tab
 
@@ -24,7 +24,7 @@ color_image: /assets/img/lineart_banner.jpg             # A bit transparent for 
 ## More in the _data folder for share buttons, author and language
 ## For layout customization, go to the "_sass > base" folder, and check "_variables.scss"
 katex: true                                             # Enable if using math markup
-mermaid: default                                        # Enable mermaid-js for diagrams, use theme: base, forest, dark, default, neutral
+mermaid: default                                           # Enable mermaid-js for diagrams, use theme: base, forest, dark, default, neutral
 google_analytics: G-62GQJMN2DP                          # Measurement ID, e.g. "G-00000"
 cookie_consent: false                                   # To respect the usage of cookies
 color_theme: auto                                       # auto, dark or light
@@ -58,5 +58,5 @@ exclude:
   - "assets/node_modules/*"
   - search.md
   
-# theme: type-on-strap                                  # if using the theme as a jekyll theme gem
-remote_theme: sylhare/Type-on-Strap                     # If using as a remote_theme in github
+# theme: type-on-strap
+remote_theme: sylhare/Type-on-Strap                    

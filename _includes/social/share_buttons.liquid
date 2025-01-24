@@ -1,0 +1,57 @@
+{% if site.data.social or site.theme_settings %}
+<div class="share-buttons">
+    <ul class="share-buttons">
+        <li class="meta">Share</li>
+
+        {% if site.data.social.share.facebook or site.theme_settings.facebook %}
+        <li>
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}"
+               target="_blank" title="Share on Facebook">
+                <i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i>
+                <span class="sr-only">Share on Facebook</span>
+            </a>
+        </li>
+        {% endif %}
+
+        {% if site.data.social.share.twitter or site.theme_settings.twitter %}
+        <li>
+            <a href="https://twitter.com/share?url={{ page.url | absolute_url }}&text={{ page.title | strip_html | url_encode }}"
+               target="_blank" title="Share on Twitter">
+                <i class="fab fa-twitter-square fa-2x" aria-hidden="true"></i>
+                <span class="sr-only">Share on Twitter</span>
+            </a>
+        </li>
+        {% endif %}
+
+        {% if site.data.social.share.linkedin or site.theme_settings.linkedin %}
+        <li>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title={{ page.title | strip_html | url_encode }}"
+               target="_blank" title="Share on LinkedIn">
+                <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+                <span class="sr-only">Share on LinkedIn</span>
+            </a>
+        </li>
+        {% endif %}
+
+        {% if site.data.social.share.reddit or site.theme_settings.reddit %}
+        <li>
+            <a href="https://www.reddit.com/submit?url={{ page.url | absolute_url }}&title={{ page.title | strip_html | url_encode }}"
+               target="_blank" title="Share on Reddit">
+                <i class="fab fa-reddit-square fa-2x" aria-hidden="true"></i>
+                <span class="sr-only">Share on Reddit</span>
+            </a>
+        </li>
+        {% endif %}
+
+        {% if site.data.social.share.email or site.theme_settings.email %}
+        <li>
+            <a href="mailto:?subject={{ page.title | strip_html }}&body={{ page.url | absolute_url }}"
+               target="_blank" title="Share via Email">
+                <i class="fas fa-envelope-square fa-2x" aria-hidden="true"></i>
+                <span class="sr-only">Share via Email</span>
+            </a>
+        </li>
+        {% endif %}
+    </ul>
+</div>
+{% endif %}
