@@ -1,11 +1,19 @@
---- 
+---
 layout: page
-title : Portfolio 
+title: Portfolio
 permalink: /portfolio/
-subtitle: "Projects I am working on" 
-feature-img: "assets/img/pexels/computer.jpeg"
-position: 4
-tags: [Page]
 ---
 
-{% include portfolio.html %}
+# Portfolio
+
+Below are some of the key projects I’ve worked on:
+
+## Project 1: [Project Title]
+- Description: [Brief description of the project]
+- Skills: [Skills used, e.g., cybersecurity, team management]
+- [Learn More](#)
+
+## Project 2: [Project Title]
+- Description: [Brief description of the project]
+- Skills: [Skills used, e.g., process optimization, IT infrastructure]
+- [Learn More](#)

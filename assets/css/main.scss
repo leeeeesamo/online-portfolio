@@ -1,4 +1,51 @@
 ---
 ---
 
-@use "type-on-strap";
+@use "type-on-strap" as strap;
+
+.about-me {
+  padding: 50px 20px;
+  text-align: left;
+  background-color: strap.$background-color; // Use a global background color
+
+  h1, h2 {
+    font-weight: bold;
+    color: strap.$text-color; // Use global text color
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: strap.$text-color; // Use global text color
+  }
+
+  ul {
+    list-style: disc;
+    margin-left: 40px;
+
+    li {
+      color: strap.$text-color; // Use global text color
+      margin-bottom: 10px;
+    }
+  }
+
+  a {
+    color: strap.$primary-color; // Use global primary color for links
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+      color: strap.$hover-color; // Use global hover color
+    }
+  }
+}
+
+// Responsive adjustments
+@include strap.responsive("768px") {
+  .about-me {
+    padding: 20px 10px;
+  }
+}
