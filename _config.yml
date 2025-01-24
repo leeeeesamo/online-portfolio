@@ -5,7 +5,7 @@ url: "https://leeeeesamo.github.io"
 ## THEME-SPECIFIC CONFIGURATION ##
 title: My Career Portfolio
 description: A professional portfolio showcasing my career achievements.                                       
-avatar: assets/img/online-portfolio.png                 # Empty for no avatar in navbar
+avatar: assets/img/online-portfolio.png               # Empty for no avatar in navbar
 favicon: assets/favicon.ico                             # Icon displayed in the tab
 
 ## Header and footer text ##
@@ -28,15 +28,6 @@ mermaid: default                                           # Enable mermaid-js f
 google_analytics: G-62GQJMN2DP                          # Measurement ID, e.g. "G-00000"
 cookie_consent: false                                   # To respect the usage of cookies
 color_theme: auto                                       # auto, dark or light
-
-# Navigation
-navigation:
-  - name: "Portfolio"
-    link: "/portfolio/"
-  - name: "Resumes"
-    link: "/resumes/"
-  - name: "Contact Me"
-    link: "/contact/"
 
 # PAGINATION
 paginate: 5
@@ -68,4 +59,8 @@ exclude:
   - search.md
   
 # theme: type-on-strap
-remote_theme: sylhare/Type-on-Strap                    
+remote_theme: sylhare/Type-on-Strap                  
+
+# Footer
+footer_text: >
+  © Leesa Moore. Built with <a href="https://jekyllrb.com/">Jekyll</a>.

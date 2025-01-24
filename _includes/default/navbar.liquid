@@ -20,14 +20,24 @@
 
         <!-- Menu -->
         <ul class="hide">
-            {% for item in site.navigation %}
+            <!-- Static Navigation Links -->
             <li>
-                <a class="clear" aria-label="{{ item.name }}" title="{{ item.name }}" href="{{ item.link | relative_url }}">
-                    <span class="navbar-label">{{ item.name }}</span>
+                <a class="clear" aria-label="Portfolio" title="Portfolio" href="{{ '/portfolio/' | relative_url }}">
+                    <span class="navbar-label">Portfolio</span>
                 </a>
             </li>
-            {% endfor %}
+            <li>
+                <a class="clear" aria-label="Resumes" title="Resumes" href="{{ '/resumes/' | relative_url }}">
+                    <span class="navbar-label">Resumes</span>
+                </a>
+            </li>
+            <li>
+                <a class="clear" aria-label="Contact Me" title="Contact Me" href="{{ '/contact/' | relative_url }}">
+                    <span class="navbar-label">Contact Me</span>
+                </a>
+            </li>
 
+            <!-- Theme Toggle (if enabled) -->
             {% if site.color_theme == 'auto' %}
             <li class="separator"> | </li>
             <li>
