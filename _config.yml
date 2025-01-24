@@ -1,58 +1,61 @@
 # SITE CONFIGURATION
-baseurl: "/Type-on-Strap"
-url: "https://sylhare.github.io"
+baseurl: "/online.portfolio"
+url: "https://leeeeesamo.github.io"
 
-# THEME-SPECIFIC CONFIGURATION
-title: Type on Strap                                    # site's title
-description: "A website with blog posts and pages"      # used by search engines
-avatar: assets/img/triangle.png                         # Empty for no avatar in navbar
+## THEME-SPECIFIC CONFIGURATION ##
+title: My Online Portfolio                              # site's title
+description: Showcasing expertise in business solutions and IT services — explore my skills and achievements.                                           # used by search engines
+avatar: assets/img/topnotchlogo.jpeg                    # Empty for no avatar in navbar
 favicon: assets/favicon.ico                             # Icon displayed in the tab
 
-# Header and footer text
-header_text: Change <code>header_text</code> in <code>_config.yml</code>  # Change Blog header text
-header_feature_image: assets/img/header/triangular.jpeg
+## Header and footer text ##
+header_text: Welcome to My Online Portfolio             
+header_feature_image: assets/img/header/header_banner.jpeg
 header_feature_image_responsive: true
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+  © Leesa Moore. All rights reserved. Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>. Designed with passion and professionalism. Let's connect: <a href="https://www.linkedin.com/in/leesa-moore/">LinkedIn</a> | <a href="mailto:lmoore0510@gmail.com">Email Me</a>
 
-# Blog
+## Blog ##
 excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable
 post_navigation: true
-color_image: /assets/img/lineart.png                    # A bit transparent for color posts.
+color_image: /assets/img/lineart_banner.jpg             # A bit transparent for color posts.
 
-# Features
-# More in the _data folder for share buttons, author and language
-# For layout customization, go to the "_sass > base" folder, and check "_variables.scss"
+## Features ## 
+## More in the _data folder for share buttons, author and language
+## For layout customization, go to the "_sass > base" folder, and check "_variables.scss"
 katex: true                                             # Enable if using math markup
 mermaid: default                                        # Enable mermaid-js for diagrams, use theme: base, forest, dark, default, neutral
-google_analytics:                                       # Measurement ID, e.g. "G-00000"
+google_analytics: G-Z7MTF90844                          # Measurement ID, e.g. "G-00000"
 cookie_consent: false                                   # To respect the usage of cookies
 color_theme: auto                                       # auto, dark or light
 
-# Comments options
-comments:
-  disqus_shortname:                                     # Your discus shortname for comments
-  cusdis_app_id:                                        # Your cusdis data-app-id
-  utterances:                                           # Enable by filling below information. For more info, go to https://utteranc.es
-    repo:                                               # your public comments repository (e.g. owner/repo)
-    issue-term:                                         # Issue term (e.g. "comment" consider issues with this word in the title as comments)
-
 # PAGINATION
 paginate: 5
-paginate_path: "/blog/page:num"
+paginate_path: "/portfolio/page:num" 
 
 # PORTFOLIO
 collections:
   portfolio:
     output: true
-    permalink: /:collection/:name
+    permalink: /portfolio/:name                         # Updated for better permalink structure
+    sort_by: "date"                                     # Sort items by date (customize as needed)
+    sort_order: "descending"
 
 # BUILD SETTINGS
 sass:
   style: compressed
   quiet_deps: true
-plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
-exclude: [".jekyll-cache", ".jekyll-metadata", ".idea", "vendor/*", "assets/node_modules/*"]
+plugins:
+  - jekyll-paginate                                     # Pagination plugin
+  - jekyll-seo-tag                                      # SEO optimization plugin
+  - jekyll-feed                                         # RSS feed plugin
 
+exclude: 
+  - ".jekyll-cache" 
+  - ".jekyll-metadata" 
+  - ".idea" 
+  - "vendor/*" 
+  - "assets/node_modules/*"
+  
 # theme: type-on-strap                                  # if using the theme as a jekyll theme gem
 remote_theme: sylhare/Type-on-Strap                     # If using as a remote_theme in github

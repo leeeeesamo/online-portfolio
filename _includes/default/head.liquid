@@ -4,8 +4,8 @@
 
     <!-- Theme Mode-->
     <script>
-        const darkBtn = "{{ site.data.language.str_dark | default: "Dark" }}";
-        const lightBtn = "{{ site.data.language.str_light | default: "Light" }}";
+        const darkBtn = "{{ site.data.language.str_dark | default: \"Dark\" }}";
+        const lightBtn = "{{ site.data.language.str_light | default: \"Light\" }}";
         const isAutoTheme = {% if site.color_theme == 'auto' %}true{% else %}false{% endif %};
         const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         if (isAutoTheme) {
@@ -48,6 +48,16 @@
 
     <!-- Simple Jekyll Search 1.10.0 -->
     <script src="{{ '/assets/js/vendor/simple-jekyll-search.min.js' | relative_url }}" type="text/javascript"></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-62GQJMN2DP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-62GQJMN2DP');
+    </script>
 
     <!-- Google Analytics / Cookie Consent -->
     <script>
