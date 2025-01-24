@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Type on Strap 🎨
 
 [![Build](https://github.com/sylhare/Type-on-Strap/actions/workflows/docker-build.yml/badge.svg)](https://github.com/sylhare/Type-on-Strap/actions/workflows/docker-build.yml)
@@ -648,3 +649,6 @@ This theme is licensed under the [MIT License (MIT)](/LICENSE)
 
 - Pictures from [Pexels](https://www.pexels.com/) are under Creative Commons Zero (CC0) license
 - Fonts are licensed under the [SIL Open Font License (OFL)](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
+=======
+# online-portfolio
+>>>>>>> 31d8562353a3c427e7c6d5473eaecff041d2ee9d
