@@ -41,8 +41,8 @@ Build the site for production:
 
 The generated static files will be available in the _site directory.
 
----
 ## **Repository Structure**
+```shell
 online-portfolio/
 ├── _includes               # Reusable HTML partials
 ├── _layouts                # Jekyll layouts (e.g., default, post)
@@ -55,8 +55,8 @@ online-portfolio/
 ├── _config.yml             # Main configuration file
 ├── Gemfile                 # Ruby dependencies
 └── index.html              # Homepage
+```
 
----
 ## **Customization**
 ### **Site Configuration**
 Edit _config.yml to update:
